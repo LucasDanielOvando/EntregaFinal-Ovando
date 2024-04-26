@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <nav class="navegacion">
+        <ul>
+            <!-- (li>a)*5  para hacerlo rapido -->
+            <!-- ../ para los enlases que no salen con ./ por ejemplo index en incio  -->
+            <li><a href="../index.html">Incio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./Galeria.html">Galeria</a></li>
+            <li><a href="./Preguntas-Frecuentes.html">Preguntas Frecuentes</a></li>
+            <li><a href="./Contacto.html">Contactos</a></li>
+        </ul>
+
+    </nav>
+    <H1>Contacto</H1>
+    <!-- Formulario es form para cosas que el usuario tiene que rellenar -->
+    <form action="#" method="get" class="form-ejemplo">
+        <input type="text" placeholder="nabuel" name="nombre">
+        
+        <input type="number" placeholder="Nº Telefono" name="cel">
+        
+        <input type="date" name="Nacimiento">
+        
+        <input type="password" placeholder="Contraseña" name="pass">
+        
+        <!-- Control barra espceadora veo los tipos -->
+        <input type="reset">
+        
+        <input type="search" placeholder="Buscar" name="busqueda">
+        
+        <textarea name="Comentario" id="" cols="30" rows="10"></textarea>
+        
+        <!-- Tipo rapidio -->
+        <p>¿Que turno prefieres?</p>
+        <div>Turno Mañana</div>
+        <input type="radio" name="turno" value="manana">
+        <div>Turno Tarde</div>
+        <input type="radio" name="turno" value="Tarde">
+        
+        <!-- Select -->
+    
+        <select name="talle">
+            <p>¿Que talle tenes?</p>
+            <option value="M">M</option>
+            <option value="L">L</option>
+               
+        <input type="submit" placeholder="enviar">
+    </form> 
+
+</body>
+
+</html>

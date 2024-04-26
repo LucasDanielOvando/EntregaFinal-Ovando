@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clase 2</title>
+    <!-- creo un vinculo con link al css estilo -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+    <!-- Navegacion = Menu   -->
+    <!-- NAV TIENE UN SOLO HIJO (ul fijarse en lineas) -->
+    <!-- BEM:Block--nav -->
+    <nav class="navegacion">
+        <!-- lista no ordenada (unorded es ul) -->
+        <ul >
+            <!-- List item -->
+            <!-- Enlases relativos -->
+            <li class=><a href="./index.html">Incio</a></li>
+            <li><a href="./pages/nosotros.html">Nosotros</a></li>
+            <li><a href="./pages/Galeria.html">Galeria</a></li>
+            <Li><a href="./pages/Preguntas-Frecuentes.html">Preguntas frecuentes</a></Li>
+            <li><a href="./pages/Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- MAIN -->
+    <MAIn class="main-index">
+        <h1>INCIDENTE DE SHIBUYA FAN PAGE</h1>
+        <h2 class="h2naruto"> PERSONAJES DEL ARCO DE SHIBUYA</h2>
+        <!-- FLEXBOX -->
+        <section class="ShibuyaPersonajes">
+            <!-- Card img producto, nombre, precio, boton dentro del div -->
+            <div class="personaje">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtwRgXHwQmsSwG3jRrP3-ob0Ci_tKP4cQxyHDRoET1zdbllRthyphenhyphenlwZzsRj4M0_7doZWwNqaCqk8g7dp3Pd7P4OV8seJaWWHZD2C8SSnjq2CISQoyDQyro2jzP4qxHz1WXVJse9M-j3tZfF/w1200-h630-p-k-no-nu/Yuji-Itadori-Anime-2.png"
+                    alt="Itadori Yuji">
+                <h3>Itadori Yuji</h3>
+                <p>Estudiante de primer año de Tokio, recipiente de Sukuna</p>
+                <!-- boton de ejemplo nada mas -->
+                <button class="buttonGeneral">"Googlear"</button>
+            </div>
+            <div class="personaje">
+                <img src="https://storage.googleapis.com/syr-art-prod-character-images/36a0f2a9-e09a-4236-b789-9b4cc9cd5d78.png"
+                    alt="Gojo Sensei">
+                <h3>Satoru Gojo</h3>
+                <p>Profesor de Tokio,lider del Clan Gojo</p>
+                <button class="buttonGeneral">"Googlear"</button>
+            </div>
+            <div class="personaje">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/46a9374d-e7fd-4bca-9214-7e3976a050d0/dgfzl3p-11e8a47e-8122-4792-80d4-27f9b491ce2f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQ2YTkzNzRkLWU3ZmQtNGJjYS05MjE0LTdlMzk3NmEwNTBkMFwvZGdmemwzcC0xMWU4YTQ3ZS04MTIyLTQ3OTItODBkNC0yN2Y5YjQ5MWNlMmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.DKwqZWC7cujYDAeKQ7pJ-GL3kwCUSAW5muQ8RVVypyo"
+                    alt="Sukuna Shibuya">
+                <h3>Ryomen Sukuna</h3>
+                <p>Rey de las maldiciones</p>
+                <button class="buttonGeneral">"googlear"</button>
+            </div>
+            <div class="personaje">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8bb21ed-434e-4d55-b5d0-410fe988fb30/dgjmqyh-9fc82f0c-8820-40cb-bf3b-8b5b1f7c95e7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U4YmIyMWVkLTQzNGUtNGQ1NS1iNWQwLTQxMGZlOTg4ZmIzMFwvZGdqbXF5aC05ZmM4MmYwYy04ODIwLTQwY2ItYmYzYi04YjViMWY3Yzk1ZTcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Eoi-mvnZO6jzRMTGqbyOhnNqGiQAFmLnUuAvYS8KtBE"
+                    alt="Fishiguru Megumi">
+                <h3>Fushiguro Megumi</h3>
+                <p>Estudiante primer año de Tokio, usuario de las 10 sombras</p>
+                <button class="buttonGeneral">"googlear"</button>
+            </div>
+            <div class="personaje">
+                <img src="https://static.wikia.nocookie.net/332d91ba-8943-462f-a8a1-4f3d0f8d3375" alt="Todo Aoi">
+                <h3>Aoi Todo</h3>
+                <p> Estudiante de tercer año de Kioto</p>
+                <button class="buttonGeneral">"googlear"</button>
+            </div>
+            <div class="personaje">
+                <img src="https://pbs.twimg.com/media/FERmwOoXMAgIB29.png" alt="Mahito Hanami Jogo">
+                <h3>Dagon ,Hanami y Jogo</h3>
+                <p> Maldiciones de grado especial</p>
+                <button class="buttonGeneral">"googlear"</button>
+            </div>
+            <div class="personaje">
+                <img src="https://figpin.com/cdn/shop/files/FiGPiN_1419JUJUTSUKAISENKENTONANAMIPIN_1.png?v=1690566763&width=1  alt:"
+                    Nanami">
+                <h3>Kento Nanami</h3>
+                <p>Hechicero de primer grado, estudio en Tokio</p>
+                <button class="buttonGeneral">"googlear"</button>
+            </div>
+            <div class="personaje">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/972b563d-3313-466a-be04-62aa7100ef89/dfy28g4-226d962a-8999-4e84-93d7-af24be8dee3c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk3MmI1NjNkLTMzMTMtNDY2YS1iZTA0LTYyYWE3MTAwZWY4OVwvZGZ5MjhnNC0yMjZkOTYyYS04OTk5LTRlODQtOTNkNy1hZjI0YmU4ZGVlM2MucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iJ-RUU9-MIq55XS_C5IBeXou_frlraR49lOu0_1R2ho"
+                    alt="Falso Geto">
+                <h3>Falso Geto</h3>
+                <p>Impostor en el cuerpo de Geto</p>
+                <button class="buttonGeneral">"googlear"</button>
+            </div>
+            <div class="personaje">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/845af5fa-32bb-492c-8b95-7af4529d3ece/dgsq5g6-cf14e742-4725-4145-822d-963bb3c34d5d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0NWFmNWZhLTMyYmItNDkyYy04Yjk1LTdhZjQ1MjlkM2VjZVwvZGdzcTVnNi1jZjE0ZTc0Mi00NzI1LTQxNDUtODIyZC05NjNiYjNjMzRkNWQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.NQq_rV7VOqQG5Xv7QcXNDxyF5UAsNrL6LkL2QQf8pMI"
+                    alt="Mahito">
+                <h3>Mahito</h3>
+                <p>Lider de las maldiciones de grado especial, nemesis de itadori</p>
+                <button class="buttonGeneral">"googlear"</button>
+            </div>
+
+        </section>
+        <!-- GRIDS -->
+        <h2 class="h2naruto"> Eventos Importantes del incidente de shibuya</h2>
+        <section class="eventos-shibuya">
+            <div>
+                <img src="data:image/jpeg;base64,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"
+                    alt="gojo sellado">
+                <p>Sellado de Gojo</p>
+                <button class="buttonGeneral">ver mas</button>
+            </div>
+            <div>
+                <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/11/sukuna-and-jogo.jpg"
+                    alt="sukuna vs jogo">
+                <p>Sukuna toma el control y batalla contra Jogo</p>
+                <button class="buttonGeneral">ver mas</button>
+            </div>
+            <div>
+                <img src="https://i.ytimg.com/vi/B-pbM3WzjPk/maxresdefault.jpg" alt="megumin vs toji">
+                <p>Megumin batalla contra su padre y termina muy herido</p>
+                <button class="buttonGeneral">ver mas</button>
+            </div>
+            <div>
+                <img src="https://pbs.twimg.com/media/F_Fh_scXwAAxdme?format=jpg&name=4096x4096"
+                    alt="sukuna vs mahograga">
+                <p>Megumin invoca a Mahoraga,y este ultimo batalla contra Sukuna destruyendo casi todo Shibuya</p>
+                <button class="buttonGeneral">ver mas</button>
+            </div>
+            <div>
+                <img src="https://pbs.twimg.com/media/FiQeaDqXoAA0yuR.jpg" alt="itadori y todo vs mahito">
+                <p>Itadori y su brother Todo batallan contra Mahito, quien sera absorbido por el falso geto antes de la
+                    batalla final</p>
+                <button class="buttonGeneral">ver mas</button>
+            </div>
+
+        </section>
+
+        <div class="wapp">
+            <button>WhatsApp</button>
+        </div>
+
+
+    </MAIn>
+    <FOoter>
+
+    </FOoter>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
