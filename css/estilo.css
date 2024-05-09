@@ -307,3 +307,9 @@ h1 {
 @media (max-width: 376px) {
   .eventos-shibuya {
     grid-template-columns: 1fr; } }
+
+.header {
+  display: flex;
+  justify-content: center; }
+  .header .logo {
+    width: 100px; }
