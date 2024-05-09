@@ -1,0 +1,393 @@
+/* tipografia van al comienzo  njruto es local*/
+/* selector de tipo etiqueta */
+@font-face {
+    font-family: njnaruto;
+    src: url(../resources/tipografia/njnaruto.ttf);
+}
+
+/* tipografia web */
+/* font-family: "Edu NSW ACT Foundation", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+/* reseto  (creo que no me funciona*/
+
+
+h1 {
+    color: gold;
+    background-color: black;
+    text-align: center;
+    font-family: njnaruto;
+    padding: 20px;
+    border: dashed 2px blue;
+    margin: 50px;
+    position: sticky;
+    top: 0;
+}
+
+.h2naruto {
+    font-family: njnaruto;
+    color: gold;
+    background-color: black;
+
+
+}
+
+.h2pf {
+    color: gold;
+
+
+}
+
+/* Selector por class  es por punto*/
+.gojo {
+    color: blueviolet;
+    background-color: black;
+    font-family: njnaruto;
+}
+
+.GetoGojo {
+    color: white;
+    background-color: black;
+    font-family: njnaruto
+}
+
+.bordes-redondos {
+    border-radius: 5px;
+}
+
+/* selector ID solo una vez  por un numeral*/
+#sukuna-de {
+    font-size: 20px;
+    color: red;
+    background-color: black;
+    font-family: njnaruto
+}
+
+
+/* podes poner mas de una clase  */
+/* Navegacion */
+.navegacion {
+    background-color: black;
+    color: gold;
+
+}
+
+/* selector convinado navegacion mas a  */
+.navegacion a{
+    color: gold;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+    font-family: njnaruto
+}
+
+
+
+
+
+
+.navegacion ul {
+    list-style-type: none;
+
+}
+
+/* imagen fondo  nostros*/
+.loremEjemplo {
+    background-image: url("https://www.pngall.com/wp-content/uploads/15/Jujutsu-Kaisen-PNG-Free-Image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+/* ----NOSTROS EJEMPLO aplicamos 2 selectores al mismo bloque--- */
+.nostros-ejemplo p {
+    /* etiqueta el bloque */
+    border: solid 2px black;
+    display: block;
+    /* ancho */
+    width: 500px;
+    /* alto */
+    height: 100px;
+}
+
+.nostros-ejemplo a {
+    /* etiqueta en linea */
+    border: solid 2px red;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+
+
+}
+
+.nostros-ejemplo .overflow {
+    height: 50px;
+    width: 200px;
+    overflow: auto;
+}
+
+/* form ejemplo */
+.form-ejemplo input {
+    display: block;
+
+}
+
+/* ----MAIN INDEX  (aprender flex)*/
+.ShibuyaPersonajes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: solid gold 3px; */
+    /* min-height: 650px*/
+    align-content: space-around;
+    /* min-width: 650px */
+    align-items: center;
+
+
+}
+.personaje {
+    border: black solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    box-shadow: 2px 2px 6px 2px rgba(255, 217, 0, 0.342);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px;
+}
+.personaje h3 {
+    font-family: njnaruto;
+    color: gold;
+    
+}
+
+.personaje img {
+    height: 250px;
+    /* border: dotted 3px black */
+}
+.buttonGeneral{
+    padding: 4px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    background-color: black;
+    color: white;
+
+}
+/* BOTON FIJO */
+.wapp {
+    position: fixed;
+    top: 90% ;
+    right: 30px;
+}
+.wapp button{
+    background-color: rgb(13, 128, 0) ;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* position sticky puede hacer a h1 acompañar */
+.eventos-shibuya div {
+    border: black 3px;
+    border-radius: 15px;
+    background-color: gold;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(255, 217, 0, 0.354);
+}
+.eventos-shibuya{
+    /* border: greenyellow solid 3px; */
+    display: grid;
+    /* fr es una unidad de medida para grid, repeat es para hacer todo mas rapido  con columnas IGUALES*/
+    grid-template-columns:  repeat(3,4fr);
+    /* grid-template-rows: repeat(2,150px); */
+    /* column-gap: 20px; */
+    /* row es la separacion etre filas */
+    /* row-gap: 15px; */
+    /* eje vertical */
+    align-items: center;
+    justify-items: center;
+    /* height: 500px; */
+    justify-content: center;
+    align-content: center;    
+    background-color: black;
+    padding: 15px;  
+}
+    
+.eventos-shibuya div p{
+    font-size: 1rem;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    
+}
+.eventos-shibuya div img{
+    height: 200px;
+    width: 200px;
+
+}
+
+/* GRID GALERIA  distrubucion mas personalizada*/
+.main-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid-galaria {
+    display: grid;
+    grid-template-areas: 
+    "img1 img1 img6 img6"
+    "img4 img3 img3 img2"
+    "img4 img5 img5 img2"
+    ;
+    grid-template-rows: repeat(3,300px);
+    grid-template-columns: repeat(4,300px);
+    
+}
+.img-1 {
+grid-area: img1;
+height: 100%;
+/* background-color: aqua; */
+
+}
+.img-2{
+grid-area: img2;
+/* background-color: red; */
+height: 100%;
+
+}
+.img-3 {
+grid-area: img3;
+width: 100%;
+/* background-color: blueviolet; */
+
+}
+.img-4 {
+grid-area: img4;
+height:  100%;
+/* background-color: chartreuse; */
+}
+
+.img-5{
+grid-area: img5;
+width: 100%;
+/* background-color: darkblue; */
+}
+.img-6{
+grid-area: img6;
+width: 100%;
+/* background-color: darkseagreen; */
+}
+.main-galeria{
+    padding-bottom: 200px;
+}
+.grid-galaria div{
+    overflow: hidden;
+}
+/* MAIN PREGUNTAS FRECUENTES EJEMPLO */
+.main-pf div {
+    border: solid;
+    padding: 10px;
+}
+.main-pf a {
+    display: inline-block;
+    padding: 10px;
+    font-family:"Edu NSW ACT Foundation", cursive;
+    background-color: azure;
+    color: #0a0a3c;
+}
+/* psuedoclase LINK todos los elementos  a que tengan un href definidoy  que no haya sido visitado */
+.main-pf a:link {   
+
+    background-color: gold;
+    color:black;
+}
+/* pasar el mouse por encime es el hover */
+.main-pf a:hover {
+    font-weight: bolder;
+    padding: 15px;
+    box-shadow: 2px 2px 2px 2px;
+}
+/* elementos a despues de ser clickeados */
+.main-pf a:active {
+    background-color: red;
+    color: black;
+}
+/* tambien este el visited */
+.main-pf div:not(.padre) {
+    padding-left: 50px;
+}
+/* ejemplo le cambia algo al segundo hijo de la clase padre, solo a ese */
+.padre div:nth-child(2) {
+    font-weight: bold;
+    color: gold;
+}
+
+/* bootstrap  CONSEGUI PISAR A Boorstrap!*/
+.incidenteTex {
+    font-family: "Edu NSW ACT Foundation", cursive
+    
+}
+
+
+
+
+
+
+
+/* responsive */
+/* estrategia mobile last--- MAX WIDT */
+/* tablet , como hago que quede alineado ?*/
+@media (max-width:851px){
+    .grid-galaria {
+        display: grid;
+        grid-template-areas: 
+        "img1 img6"
+        "img4 img3"
+        "img2 img5"
+        ;
+        grid-template-rows: repeat(3,200px);
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
+@media (max-width:768px) {
+    h1 {
+        color: red;
+    }
+    .eventos-shibuya {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* mobile */ 
+@media (max-width:426px){
+    .grid-galaria {
+        display: grid;
+        grid-template-areas: 
+        "img1"
+        "img6"
+        "img4 "
+        "img3"
+        "img2" 
+        "img5"
+        ;
+        grid-template-rows: repeat(6,200px);
+        grid-template-columns: 1fr;
+        margin: 0;
+        
+    }
+}
+
+@media (max-width:376px) {
+    .eventos-shibuya {
+        grid-template-columns:1fr;
+    }
+}
+
+
+    
