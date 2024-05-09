@@ -389,7 +389,11 @@ width: 100%;
     }
 }
 // utilidades
-@import "./utilities/" ;
+@import "./utilities/color";
+@import "./utilities/fonts" ;
+
+@import "./utilities/reset";
+
 
 
 //secciones

@@ -308,8 +308,13 @@ h1 {
   .eventos-shibuya {
     grid-template-columns: 1fr; } }
 
+h5 {
+  font-family: njnaruto; }
+
 .header {
   display: flex;
   justify-content: center; }
   .header .logo {
     width: 100px; }
+  .header h5 {
+    color: gold; }
