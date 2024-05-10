@@ -10,7 +10,7 @@
 /* font-family: "Edu NSW ACT Foundation", cursive; */
 /* reseto  (creo que no me funciona*/
 h1 {
-  color: gold;
+  color: red;
   background-color: black;
   text-align: center;
   font-family: njnaruto;
@@ -279,6 +279,10 @@ h1 {
 .incidenteTex {
   font-family: "Edu NSW ACT Foundation", cursive; }
 
+.divEjemplo div {
+  background-color: red;
+  color: red; }
+
 /* responsive */
 /* estrategia mobile last--- MAX WIDT */
 /* tablet , como hago que quede alineado ?*/
@@ -308,8 +312,11 @@ h1 {
   .eventos-shibuya {
     grid-template-columns: 1fr; } }
 
-h5 {
+h4 {
   font-family: njnaruto; }
+
+.loremejemploc {
+  font-family: "Roboto", sans-serif; }
 
 .header {
   display: flex;
@@ -318,3 +325,13 @@ h5 {
     width: 100px; }
   .header h5 {
     color: gold; }
+
+.main-index #4ejemplo {
+  color: gold; }
+
+.divEjemplo div {
+  background-color: red; }
+
+.divEjemplo h3 {
+  background-image: linear-gradient(to right, blue, red);
+  transform: rotate(10deg) translate(150px); }
