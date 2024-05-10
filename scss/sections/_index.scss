@@ -1,5 +1,13 @@
+// no entiendo por que no anda ???
 .main-index {
-    h4 {
+    #h4prueba {
         color: gold;
+        @extend .gojo
     }
 }
+
+.divEjemplo div {
+    background-color: red;
+}
+     
+    
