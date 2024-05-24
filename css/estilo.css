@@ -10,7 +10,7 @@
 /* font-family: "Edu NSW ACT Foundation", cursive; */
 /* reseto  (creo que no me funciona*/
 h1 {
-  color: red;
+  color: gold;
   background-color: black;
   text-align: center;
   font-family: njnaruto;
@@ -24,6 +24,15 @@ h1 {
   font-family: njnaruto;
   color: gold;
   background-color: black; }
+
+.pri {
+  font-family: njnaruto;
+  color: gold;
+  background-color: black; }
+
+.pd {
+  color: black;
+  font-family: "Edu NSW ACT Foundation", cursive; }
 
 .h2pf {
   color: gold; }
@@ -63,6 +72,19 @@ h1 {
   text-decoration: none;
   font-style: italic;
   font-family: njnaruto; }
+
+.navegacion a:hover {
+  font-weight: bolder;
+  padding: 15px;
+  box-shadow: 2px 2px 2px 2px; }
+
+.gojocute {
+  transform: rotate(20deg) translateX(150px);
+  height: 150px; }
+
+.itadoricute {
+  padding: 15px;
+  height: 150px; }
 
 .navegacion ul {
   list-style-type: none; }
@@ -313,7 +335,8 @@ h1 {
     grid-template-columns: 1fr; } }
 
 h4 {
-  font-family: njnaruto; }
+  font-family: njnaruto;
+  color: blueviolet; }
 
 .loremejemploc {
   font-family: "Roboto", sans-serif; }
@@ -330,7 +353,7 @@ h4 {
   color: gold; }
 
 .divEjemplo div {
-  background-color: red; }
+  background-color: #44ff00; }
 
 .divEjemplo h3 {
   background-image: linear-gradient(to right, blue, red);
